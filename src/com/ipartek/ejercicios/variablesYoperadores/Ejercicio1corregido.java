@@ -1,6 +1,6 @@
 package com.ipartek.ejercicios.variablesYoperadores;
 
-public class ejercicio1corregido {
+public class Ejercicio1corregido {
 
 	public static void main(String[] args) {
 		System.out.println("DATOS DE TIPO PRIMITIVOS");
