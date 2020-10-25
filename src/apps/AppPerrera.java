@@ -16,7 +16,7 @@ public class AppPerrera {
 
 		System.out.println("***********  APP  PERRERA   **************");
 		sc = new Scanner(System.in);
-		boolean salir = true;
+		boolean salida = true;
 
 		incializarDatos();
 
@@ -36,16 +36,15 @@ public class AppPerrera {
 				// TODO
 				modificar();
 				break;
-			case "S":
-				salir = false;
+			case "s":
+				salida = false;
+				System.out.println("***********  ADIOS, nos vemos pronto   **************");
 				break;
 			default:
 				System.out.println("Introduzca una opción válida");
 				break;
 			}
-		} while (salir);
-
-		System.out.println("***********  ADIOS, nos vemos pronto   **************");
+		} while (salida);
 		sc.close();
 	}// main
 
@@ -60,11 +59,8 @@ public class AppPerrera {
 			if (nom.equals(nombre)) {
 				lista.remove(i);
 				System.out.println("Se ha eliminado a " + nom);
-			} else {
-				System.out.println("No se encuentra " + nom + " en la lista.");
 			}
 		}
-		sc.close();
 	}
 
 	private static void modificar() {
@@ -76,7 +72,8 @@ public class AppPerrera {
 				System.out.println("Selecciona una opción a modificar:");
 				System.out.println("1. Nombre");
 				System.out.println("2. Raza");
-				switch (opcion) {
+				String op = sc.nextLine();
+				switch (op) {
 				case "1":
 					System.out.println("Introduzca el nuevo nombre:");
 					p.setNombre(sc.nextLine());
@@ -86,11 +83,8 @@ public class AppPerrera {
 					p.setRaza(sc.nextLine());
 					break;
 				}
-			} else {
-				System.out.println("No se encuentra " + nom + " en la lista.");
 			}
 		}
-
 	}
 
 	private static void crear() {
