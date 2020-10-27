@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="abstracta.Ejercicio1" project="ejercicios" 
     file="/ejercicios/src/abstracta/Ejercicio1.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="79" y="61"/>    
+    <position height="-1" width="-1" x="379" y="240"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="abstracta.Linea" project="ejercicios" file="/ejercicios/src/abstracta/Linea.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="89" x="192" y="73"/>    
+    <position height="-1" width="-1" x="278" y="118"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="abstracta.LineaColor" project="ejercicios" 
     file="/ejercicios/src/abstracta/LineaColor.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="89" x="71" y="155"/>    
+    <position height="-1" width="-1" x="168" y="166"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <class id="5" language="java" name="abstracta.LineaColorHija" project="ejercicios" 
     file="/ejercicios/src/abstracta/LineaColorHija.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="107" y="350"/>    
+    <position height="-1" width="-1" x="171" y="286"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,7 +48,7 @@
   </class>  
   <class id="6" language="java" name="abstracta.Rectangulo" project="ejercicios" 
     file="/ejercicios/src/abstracta/Rectangulo.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="110" x="575" y="64"/>    
+    <position height="-1" width="-1" x="574" y="128"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -57,7 +57,7 @@
   </class>  
   <class id="7" language="java" name="abstracta.RectanguloColor" project="ejercicios" 
     file="/ejercicios/src/abstracta/RectanguloColor.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="118" x="566" y="227"/>    
+    <position height="-1" width="-1" x="572" y="277"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
