@@ -1,0 +1,4 @@
+/**
+ * Ejercicios prácticos
+ */
+package ejerciciopractico;

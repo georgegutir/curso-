@@ -1,44 +1,46 @@
 package com.ipartek.pojo;
 
-public class Perro {
+public class Perro extends Mamifero {
 
 	// Atributos, deben ser siempre privados
 	// la forma de manipular estos atributos es a traves de los getteres y settres
 	///////////////////////////////////////
-	private String nombre;
+	private int id;
 	private String raza;
 	private float peso;
 	private boolean isVacunado;
 	private String historia;
 
-	// Constructor
+	// Constructores
 	///////////////////////////////////////
 	public Perro() {
-		super();
-		this.nombre = "Sin nombre";
+		super("Sin nombre");
+		this.id = 0;
 		this.raza = "Cruce";
 		this.peso = 0f;
 		this.isVacunado = false;
-		this.historia = "Erase una vez...";
+		this.historia = "Erase una vez....";
 	}
 
-	// Otro constructor
+	// otro constructor sobrecargado
+
 	public Perro(String nombre) {
-		this();// llama al contructor por defecto, pulsar Control+click y nos lleva al de
-				// arriba que es el principal.
-		this.nombre = nombre;
+		super(nombre);
+		this.id = 0;
+		this.raza = "Cruce";
+		this.peso = 0f;
+		this.isVacunado = false;
+		this.historia = "Erase una vez....";
+	}
+
+	public Perro(String nombre, String raza, float peso) {
+		this(nombre);
+		this.raza = raza;
+		this.peso = peso;
 	}
 
 	// Getters y setters
 	///////////////////////////////////////
-
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
 
 	public String getRaza() {
 		return raza;
@@ -68,18 +70,26 @@ public class Perro {
 		this.isVacunado = isVacunado;
 	}
 
-	public String gethistoria() {
+	public String getHistoria() {
 		return historia;
 	}
 
-	public void sethistoria(String historia) {
+	public void setHistoria(String historia) {
 		this.historia = historia;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	@Override
 	public String toString() {
-		return "perro [nombre=" + nombre + ", raza=" + raza + ", peso=" + peso + ", isVacunado=" + isVacunado
-				+ ", historia=" + historia + "]";
+		return "Perro [id=" + id + ", raza=" + raza + ", peso=" + peso + ", isVacunado=" + isVacunado + ", historia="
+				+ historia + ", getNombre()=" + getNombre() + ", getPatas()=" + getPatas() + "]";
 	}
 
 }

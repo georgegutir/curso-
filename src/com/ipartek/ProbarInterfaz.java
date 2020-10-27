@@ -15,7 +15,7 @@ public class ProbarInterfaz {
 
 			// imprimirNumeroLoteria
 			System.out.println("Introduce un tipo de loteria:");
-			int loteria = sc.nextInt();
+			int loteria = Integer.parseInt(sc.nextLine());
 			util.imprimirNumeroLoteria(loteria);
 
 			// calcularVueltas
@@ -31,5 +31,6 @@ public class ProbarInterfaz {
 
 		System.out.println("Fin del programa");
 		sc.close();
+
 	}
 }
