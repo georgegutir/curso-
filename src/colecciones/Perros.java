@@ -22,7 +22,7 @@ public class Perros {
 		perros.add(p);
 		p.setNombre("Ideafix");
 		p.setVacunado(false);
-		p.sethistoria("Obelix");
+		p.setHistoria("Obelix");
 		perros.add(p);
 		perros.add(new Perro("Goofy"));
 
