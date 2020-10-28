@@ -1,6 +1,6 @@
 package ejerciciopractico2;
 
-public class EjercicioPojo {
+public class Coche {
 
 	// Atributos, deben ser siempre privados
 	// la forma de manipular estos atributos es a traves de los getteres y setters
@@ -14,7 +14,7 @@ public class EjercicioPojo {
 
 	// Constructor
 	///////////////////////////////////////
-	public EjercicioPojo() {
+	public Coche() {
 		super();
 		this.matricula = "sin nombre";
 		this.marca = "sin marca";
@@ -25,7 +25,7 @@ public class EjercicioPojo {
 	}
 
 	// Otro constructor
-	public EjercicioPojo(String matricula) {
+	public Coche(String matricula) {
 		this();// llama al contructor por defecto, pulsar Control+click y nos lleva al de
 				// arriba que es el principal.
 		this.matricula = matricula;
