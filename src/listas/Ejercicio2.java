@@ -22,7 +22,7 @@ public class Ejercicio2 {
 			System.out.println("Introduce nombre del futbolista:");
 			Futbolistas.add(sc.nextLine());
 			System.out.println("Introduce dorsal del futbolista:");
-			Futbolistas.add(Integer.parseInt(sc.nextLine()));
+			// Futbolistas.add(Integer.parseInt(sc.nextLine()));
 		} while (opcion);
 		sc.close();
 	}
