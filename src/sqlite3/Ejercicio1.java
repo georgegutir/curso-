@@ -4,22 +4,29 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
+
+import ejercicios.interfaces.app.clases.Patinete;
 
 public class Ejercicio1 {
 
-	public static void main(String[] args) throws SQLException {
+	public static void main(String[] args) throws Exception {
 
-		Connection conn = DriverManager.getConnection("jdbc:sqlite:C:/sqlite/concesionario.db");
+		String sql = "SELECT * FROM coche ORDER BY nombre ASC;";
 
-		String sql = "SELECT * FROM coche;";
-		PreparedStatement pst = conn.prepareStatement(sql);
-		ResultSet rs = pst.executeQuery();
+		// Todo lo que metamos dentro de los () del try se cierra automaticamente al
+		// terminar el try
+		// Esto es posible porque los recursos implementan la interfaz AutoClosable
+		try (Connection conn = DriverManager.getConnection("jdbc:sqlite:ddbb/concesionario.db");
+				PreparedStatement pst = conn.prepareStatement(sql);
+				ResultSet rs = pst.executeQuery();
+				Patinete patin = new Patinete();) {
 
-		while (rs.next()) {
-			System.out.println(rs.getInt("id") + rs.getString("nombre"));
+			while (rs.next()) {
+				System.out.println(rs.getInt("id") + " " + rs.getString("nombre"));
 
-		}
+			}
+
+		} // try, se cierran Connection, PreparedStatement, ResultSet y Patinete
 
 		System.out.println("terminamos");
 
