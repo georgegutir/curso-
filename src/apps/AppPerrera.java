@@ -3,10 +3,10 @@ package apps;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import com.ipartek.pojo.Perro;
-
+import modelo.PerroDaoArrayList;
 import modelo.PerroDAOSqlite;
 import modelo.PerroDao;
+import com.ipartek.pojo.Perro;
 
 public class AppPerrera {
 
@@ -36,35 +36,83 @@ public class AppPerrera {
 				listar();
 				break;
 			case OP_CREAR:
-				// TODO resto de opciones
-				System.out.println("Sin Terminar");
+				crear();
 				break;
 
 			case OP_SALIR:
 				salir = true;
 				System.out.println("***********  ADIOS, nos vemos pronto   **************");
 				break;
-
+				
 			default:
 				System.out.println(" ** por favor selecciona una opción valida ** ");
 				break;
 			}
 
-		} while (!salir);
+		} while ( !salir );
 
+		
 		sc.close();
 
 	}// main
 
-	private static void listar() {
+	private static void crear() {
+		
+		//TODO gestionar Exceptions
+		
+		//pedido datos por consola
+		System.out.println("Dime el nombre:");
+		String nombre = sc.nextLine();
+		
+		//TODO si no introducimos la raza la deja vacia y deberia ser cruce
+		System.out.println("raza (si no la sabes es 'cruce'):");
+		String raza = sc.nextLine();
+		
+		System.out.println("Peso en Kg:");
+		float peso = Float.parseFloat(sc.nextLine());
+		
+		System.out.println("¿ Esta vacunado ?  [Si/No]");
+		boolean isVacunado = ("s".equalsIgnoreCase(sc.nextLine())) ? true : false;
+		
+		System.out.println("Cuentame su historia (no es obligatorio):");
+		String historia = sc.nextLine();
+		
+		//crear un Perro y setear valores
+		Perro pNuevo = new Perro(nombre, raza, peso);
+		pNuevo.setVacunado(isVacunado);
+		pNuevo.setHistoria(historia);
+		
+		// llamar al modelo para guardar en la bbdd
+		boolean isFallo = true;
+		do {
+		
+			try {
+				modelo.crear(pNuevo);
+				System.out.println("Perro guardado");
+				System.out.println(pNuevo);
+				isFallo = false;
+				
+			}catch (Exception e) {
+				System.out.println("** No se ha podido guardar el perro, el nombre ya existe, por favor dime otro");				
+				nombre = sc.nextLine();
+				pNuevo.setNombre(nombre);
+				// e.printStackTrace();
+			}	
+		} while ( isFallo );	
+		
+		
+	}
 
+	private static void listar() {
+		
 		// TODO ver como dar una fixed lenght al String para nombre
 		ArrayList<Perro> perros = modelo.listar();
 		for (Perro perro : perros) {
-			System.out.println(String.format("%15s [%s]  %s Kg", perro.getNombre(), perro.getRaza(), perro.getPeso()));
+			System.out.println(String.format("%15s [%s]  %4s Kg  %13s %s", perro.getNombre(), perro.getRaza(), perro.getPeso(), (perro.isVacunado()) ? "vacunado" : "*Sin Vacunar*", perro.getHistoria()));			
 		}
 
 	}
+
 
 	/**
 	 * Se encraga de pintar las pociones del menu.<br>
