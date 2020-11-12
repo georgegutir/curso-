@@ -1,0 +1,120 @@
+/* Nuestra hoja de estilos */
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+/* varibales globales */
+:root {
+    --color-primario: #1da1d1;
+    --color-acentuado: #9ecddf; 
+    --blanco: #FFF;
+    --negro: #000;
+    --gris-claro: #f7f7f7;
+    --gris-oscuro: #6f777b;
+}
+
+/* estilos a todas las etiquetas */
+
+body {
+    color: var(--negro);
+    font-size: 1rem; /* 16px */
+    line-height: 1.3rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    box-sizing: border-box;
+    background-color: powderblue;
+}
+
+h1 {   
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 15px;
+    background-color: var(--gris-claro);
+}
+
+h2, h3, h6 {
+    margin: 1rem 0;
+    color: var(--color-primario);
+}
+
+section {
+    padding: 30px;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+a {
+    text-decoration: none; /* quitar rayita de abajo al los enlaces */
+    cursor: pointer;  /* cambiar icono de flecha a mano */
+}
+
+li {
+    list-style: none;
+}
+
+main{
+    background-color: var(--gris-claro);
+}
+
+footer{
+    background-color: var(--gris-claro);
+    padding: 30px;
+}
+
+header, nav, main, footer {
+    max-width: 1024px;
+    margin: auto; /* centrar el contenido */
+    box-sizing: border-box;
+}
+
+nav#header {
+    background-color: var(--color-primario);
+    padding: 1px;
+    position: sticky;
+    top: 0;
+}
+
+nav#header a { 
+    color: var(--negro);
+}
+
+nav#header ul {
+    /* posicionar los LIs en horizontal y dividir el spacio */
+    display: flex;
+    justify-content: space-between;
+}    
+
+nav#header ul li {
+    list-style: none; /* quitar puntito */    
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+}   
+
+nav#header ul li:hover {
+    background-color: var(--color-acentuado);
+}    
+
+.container-img {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    line-height: 2em;
+}
+.alinear-der {
+    text-align: right;
+}
+
+.alinear-cen {
+    text-align: center;
+}

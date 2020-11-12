@@ -1,0 +1,82 @@
+/* Nuestra hoja de estilos */
+
+@import 'reset.css';
+
+/*Variables globales */
+
+:root{
+    --blanco: #FFF;
+    --marron: peru;
+    --verde: lime;
+    --rosa: pink;
+    --negro: black;
+}
+
+/* media para impresoras, también se puede declarar en el html con un link*/
+
+header {
+    /* prefijos para dar soporte a diferentes navegadorescontent: 
+        -moz- para Firefox y los demás navegadores de Gecko,
+        -webkit- para los navegadores WebKit: Chrome, Safari, etc.
+        -ms- para Microsoft (Internet Explorer),
+        -o- para Presto, el antiguo motor de Opera.
+    
+    */    
+    background-image: -moz-linear-gradient(top, #D7D 0%, #068 100%); 
+    background-image: -o-linear-gradient(top, #D7D 0%, #068 100%);  
+    background-image: -ms-linear-gradient(top, #D7D 0%, #068 100%); 
+    background-image: -webkit-linear-gradient(top, #D7D 0%, #068 100%); 
+    background-image: linear-gradient(top, #D7D 0%, #068 100%);
+    color: var(--blanco);
+
+}
+
+section{
+    background-color: var(--verde);
+    max-width: 1024px;
+    margin: 0;
+}
+
+footer{
+    background-color: var(--pink);
+}
+
+body{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    color: var(--negro);
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    /*color: var(--negro);*/
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h3, h4{
+    font-size: 1.8em;
+}
+
+h5, h6{
+    font-size: 1.5em;
+}
+
+p span{
+    font-weight: 600;
+}
+
+.subrayado{
+    background-color: yellow;
+    color: #000;
+}
+
+#unico{
+    background-color: blueviolet;
+}
