@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * @author ur00
  *
  */
-public interface IDao<P> extends Singleton{
+public interface IDao<P>{
 	
 	/**
 	 * lista de pojos

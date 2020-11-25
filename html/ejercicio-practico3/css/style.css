@@ -1,0 +1,82 @@
+/* variables globales */
+:root {
+    --color-primario:cornflowerblue;
+    --color-acentuado: #9ecddf; 
+    --blanco: #FFF;
+    --negro: #000;
+    --rojo: #dc3545;
+    --azul: #007bff;
+    --gris: #717171;
+    --rosa: pink;
+}
+
+header a{
+    background-color: var(--gris);
+    color: var(--negro);
+}
+
+header a:hover {
+    color: var(--blanco);
+    background-color: var(--negro);
+}
+
+footer {
+    background-color: var(--color-primario);
+    margin: auto;
+    padding: 1rem;
+    width: 100%;
+}
+
+footer .container {
+    display: flex;
+}
+
+footer a {
+    color: var(--blanco);
+}
+
+footer a:hover {
+    color: var(--rojo);
+}
+
+.descuento{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--rosa);
+    
+    font-size: x-large;
+    margin: auto;
+}
+
+.tachado {
+    text-decoration: line-through;
+}
+
+.eye{
+    position:absolute;
+    z-index: 1;
+ }
+  
+.heaven{
+    position:absolute;
+    z-index: 0;
+}
+
+input:required:invalid {
+    border: 1px solid red;
+}
+
+input:required:valid {
+    border: 1px solid green;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}

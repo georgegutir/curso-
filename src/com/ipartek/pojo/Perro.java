@@ -1,6 +1,6 @@
 package com.ipartek.pojo;
 
-public class Perro extends Mamifero implements Comparable<Perro> {
+public class Perro extends Mamifero  {
 	
 	public static final String RAZA_POR_DEFECTO = "cruce";
 	
@@ -119,13 +119,5 @@ public class Perro extends Mamifero implements Comparable<Perro> {
 				+ historia + ", getNombre()=" + getNombre() + ", getPatas()=" + getPatas() + "]";
 	}
 
-	@Override
-	public int compareTo(Perro o) {		
-		return (int) (this.peso - o.getPeso());
-	}
 
-	
-	
-	// Otros metodos
-	
 }

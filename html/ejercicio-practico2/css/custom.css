@@ -1,0 +1,58 @@
+#mainNav {
+    background-color: blue;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: lightgrey;
+}
+
+p {
+    font-size: 12px;
+}
+
+table {
+    border-style: double;
+    width: 100%;
+}
+
+thead {
+    background-color: darkblue !important;
+    color: white
+}
+
+td {
+    text-align: left;
+    padding: 5px;
+}
+
+tbody tr:nth-child(even){
+    background-color: #9bcef7;
+}
+
+tbody tr:nth-child(odd){
+    background-color: white;
+}
+
+h1 {
+    color: darkblue;
+    font-size: 25px !important;
+}
+
+a {
+    font-weight: bold;
+}
+  
+a:visited {
+    color: #B695C0 !important;
+}
+
+a:hover {
+    color: red !important;
+}
+
+img{
+    display: block;
+    margin: auto;
+    padding: 1rem;
+}

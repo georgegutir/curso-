@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Supermercado</title>
+</head>
+
+<body class="container-fluid">
+    <header>
+        <nav class="row navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Menú principal">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.jpg" width="100" height="100" alt="" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alta.html">Alta productos</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="listado.html">Listado productos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="row alert alert-info alert-dismissible fade show" role="alert">
+            Listado de productos
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-sm">
+                <caption>Listado de productos</caption>
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Precio/unidad</th>
+                        <th scope="col">descuento</th>
+                        <th scope="col">Foto</th>
+                        <th scope="col">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Dougall's Session Stout</td>
+                        <td>Dougall's Session Stout 4.2% alcohol</td>
+                        <td>1.80€</td>
+                        <td>3€</td>
+                        <td>0</td>
+                        <td><img src="img/cerveza.jpg" width="20%" height="20%"></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Opciones">
+                                <a class="btn btn-primary btn-sm" href="cliente.html">Editar</a>
+                                <a class="btn btn-danger btn-sm" href="cliente.html">Borrar</a>
+                            </div>
+                        </td>
+                    </tr>
+                   
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Tomate Orlando</td>
+                        <td>guate aquí hay tomate</td>
+                        <td>0.68€</td>
+                        <td>1.94€/kg</td>
+                        <td>10%</td>
+                        <td><img src="img/tomate.jpg" width="15%" height="15%"></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Opciones">
+                                <a class="btn btn-primary btn-sm" href="cliente.html">Editar</a>
+                                <a class="btn btn-danger btn-sm" href="cliente.html">Borrar</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Leche</td>
+                        <td>Lechera asturiana</td>
+                        <td>1.69€</td>
+                        <td>0.77€/L</td>
+                        <td>0</td>
+                        <td><img src="img/leche.jpg" width="15%" height="15%"></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Opciones">
+                                <a class="btn btn-primary btn-sm" href="cliente.html">Editar</a>
+                                <a class="btn btn-danger btn-sm" href="cliente.html">Borrar</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Pañales Dodot</td>
+                        <td>Pañales Dodot Talla 4 ( 64 Uds).</td>
+                        <td>14.95</td>
+                        <td>0.23€</td>
+                        <td>0</td>
+                        <td><img src="img/pañales.jpg" width="15%" height="15%"></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Opciones">
+                                <a class="btn btn-primary btn-sm" href="cliente.html">Editar</a>
+                                <a class="btn btn-danger btn-sm" href="cliente.html">Borrar</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>PAPEL HIGIENICO</td>
+                        <td>PAPEL HIGIENICO FOXY SEDA 3 CAPAS 4+2 ROLLOS</td>
+                        <td>1.99€</td>
+                        <td>0.33€</td>
+                        <td>0</td>
+                        <td><img src="img/papel.jpg" width="15%" height="15%"></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Opciones">
+                                <a class="btn btn-primary btn-sm" href="cliente.html">Editar</a>
+                                <a class="btn btn-danger btn-sm" href="cliente.html">Borrar</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>DETERGENTE</td>
+                        <td>DETERGENTE WIPP POLVO 40 CACITOS</td>
+                        <td>6.95€</td>
+                        <td>0.17€</td>
+                        <td>0</td>
+                        <td><img src="img/detergente.jpg" width="15%" height="15%"></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Opciones">
+                                <a class="btn btn-primary btn-sm" href="cliente.html">Editar</a>
+                                <a class="btn btn-danger btn-sm" href="cliente.html">Borrar</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>BOMBON</td>
+                        <td>BOMBON FERRERO ROCHER T16 200 GRS</td>
+                        <td>4.95€</td>
+                        <td>24.75€/kg</td>
+                        <td>0</td>
+                        <td><img src="img/bombon.jpg" width="15%" height="15%"></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Opciones">
+                                <a class="btn btn-primary btn-sm" href="cliente.html">Editar</a>
+                                <a class="btn btn-danger btn-sm" href="cliente.html">Borrar</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>VINO TINTO</td>
+                        <td>VINO TINTO VIÑA HIJOSA RIBERA DUERO JOVEN 75 CL.</td>
+                        <td>3.49€</td>
+                        <td>4.65€/L</td>
+                        <td>0</td>
+                        <td><img src="img/vino.jpg" width="15%" height="15%"></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Opciones">
+                                <a class="btn btn-primary btn-sm" href="cliente.html">Editar</a>
+                                <a class="btn btn-danger btn-sm" href="cliente.html">Borrar</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>BAYETA BALLERINA</td>
+                        <td>BAYETA BALLERINA MICROFIBRAS COLLECTION PACK 3 UNDS</td>
+                        <td>2.50€</td>
+                        <td>0.83€</td>
+                        <td>0</td>
+                        <td><img src="img/bayeta.jpg" width="15%" height="15%"></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Opciones">
+                                <a class="btn btn-primary btn-sm" href="cliente.html">Editar</a>
+                                <a class="btn btn-danger btn-sm" href="cliente.html">Borrar</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>SOBAOS </td>
+                        <td>SOBAOS VEGA PAS 450 GRS</td>
+                        <td>1.89€</td>
+                        <td>4.20€/kg</td>
+                        <td>0</td>
+                        <td><img src="img/sobaos.jpg" width="15%" height="15%"></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Opciones">
+                                <a class="btn btn-primary btn-sm" href="cliente.html">Editar</a>
+                                <a class="btn btn-danger btn-sm" href="cliente.html">Borrar</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">11</th>
+                        <td>CHOCOLATE NESTLE</td>
+                        <td>CHOCOLATE NESTLE EXTRAFINO ALMENDRA 123 GRS</td>
+                        <td>1.19€</td>
+                        <td>9.67€/kg</td>
+                        <td>0</td>
+                        <td><img src="img/chocolate.jpg" width="15%" height="15%"></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Opciones">
+                                <a class="btn btn-primary btn-sm" href="cliente.html">Editar</a>
+                                <a class="btn btn-danger btn-sm" href="cliente.html">Borrar</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">12</th>
+                        <td>HUEVOS</td>
+                        <td>HUEVO LUGAREÑO CLASE XL +73 DOCENA</td>
+                        <td>2.22€</td>
+                        <td>0.19€</td>
+                        <td>0</td>
+                        <td><img src="img/huevos.jpg" width="15%" height="15%"></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Opciones">
+                                <a class="btn btn-primary btn-sm" href="cliente.html">Editar</a>
+                                <a class="btn btn-danger btn-sm" href="cliente.html">Borrar</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="row col-12">
+            <div class="col-4 mx-auto">
+                &copy;2020 Jorge Gutiérrez
+            </div>
+            <div class="col-4 mx-auto">
+                <ul>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Localización</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="col-4 mx-auto">
+                 <a href="#"><img class="logo" src="img/facebook.jfif" alt="Facebook"/></a>
+                 <a href="#"><img class="logo" src="img/twitter.jpg" alt="Facebook"/></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap4.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('table').DataTable({
+                "language": {
+                    "url": "js/Spanish.json"
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

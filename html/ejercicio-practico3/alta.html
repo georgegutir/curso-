@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Supermercado</title>
+</head>
+
+<body class="container-fluid">
+    <header>
+        <nav class="row navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Menú principal">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.jpg" width="100" height="100" alt="" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alta.html">Alta productos</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="listado.html">Listado productos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <p><h3>Dar de alta producto</h3></p>
+        <form class="was-validated">
+
+            <div class="form-group-row">
+                  <label for="validationServer03">Nombre</label>
+                  <input type="" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                  <div id="validationServer03Feedback" class="invalid-feedback">
+                    Introduzca el nobre del producto
+                  </div>
+            </div>
+
+            <div class="form-group-row">
+                <label for="validationTextarea">Descripción</label>
+                <textarea class="form-control is-invalid" id="validationTextarea" required></textarea>
+                <div class="invalid-feedback">
+                    Introduzca la descripción del producto
+                </div>
+            </div>
+
+            <div class="input-group mb-3">
+                <label for="precio">Precio</label>
+                <div class="input-group col-sm-10">
+                    <input type="number" class="form-control" id="precio" required>
+                    <div class="input-group-append">
+                        <span class="input-group-text rounded-right" id="basic-addon2">€</span>
+                    </div> 
+                    <div class="valid-feedback">correcto</div>
+                    <div class="invalid-feedback">Debe rellenarse y ser mayor que 0</div>
+                </div>
+            </div>
+
+            <div class="input-group mb-3">
+                <label for="preciounidad">Precio por unidad</label>
+                <div class="input-group col-sm-10">
+                    <input type="number" class="form-control" id="preciounidad" required>
+                    <div class="input-group-append">
+                        <span class="input-group-text rounded-right" id="basic-addon2">€</span>
+                    </div> 
+                    <div class="valid-feedback">correcto</div>
+                    <div class="invalid-feedback">Debe rellenarse y ser mayor que 0</div>
+                </div>
+            </div>
+
+            <div class="input-group mb-3">
+                <label for="descuento">Descuento</label>
+                <div class="input-group col-sm-10">
+                    <input type="number" class="form-control" id="descuento" placeholder="Campo no obligatorio" non-required>
+                    <div class="input-group-append">
+                        <span class="input-group-text rounded-right" id="basic-addon2">%</span>
+                    </div> 
+                </div>
+            </div>
+          
+            <div class="input-group is-invalid">
+              <div class="custom-file">
+                <label for="foto" class="col-form-label">Foto</label>
+                <input type="file" class="custom-file-input" id="validatedInputGroupCustomFile" required>
+                <label class="custom-file-label" for="validatedInputGroupCustomFile">Selecciona imagen...</label>
+              </div>
+            </div>
+        </form>
+        <br>
+    </main>
+
+    <footer>
+        <div class="row col-12">
+            <div class="col-4 mx-auto">
+                &copy;2020 Jorge Gutiérrez
+            </div>
+            <div class="col-4 mx-auto">
+                <ul>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Localización</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="col-4 mx-auto">
+                 <a href="#"><img class="logo" src="img/facebook.jfif" alt="Facebook"/></a>
+                 <a href="#"><img class="logo" src="img/twitter.jpg" alt="Facebook"/></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

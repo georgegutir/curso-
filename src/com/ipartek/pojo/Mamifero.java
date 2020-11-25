@@ -1,10 +1,10 @@
 package com.ipartek.pojo;
 
 public class Mamifero {
-
+	
 	protected String nombre;
 	private int patas;
-
+	
 	public Mamifero(String nombre) {
 		super();
 		this.nombre = nombre;
@@ -32,5 +32,5 @@ public class Mamifero {
 	public String toString() {
 		return "Mamifero [nombre=" + nombre + ", patas=" + patas + "]";
 	}
-
+	
 }
