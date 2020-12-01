@@ -1,3 +1,7 @@
 /PerroDAOSqlite.class
 /PerroDao.class
 /PerroDaoArrayList.class
+/ConectionManager.class
+/IDao.class
+/IPersonaDAO.class
+/Singleton.class
